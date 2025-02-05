@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale = 1.0">
+        <title>STEMpact Tutoring</title>
+        <link rel="stylesheet" href="./stempact.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="stempact.html"><img src="./logo.jpg"/></a>
+                <div class = "nav-links" id="navLinks">
+                    <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="stempact.html">HOME</a></li>
+                        <li><a href="stempact_aboutus.html">ABOUT US</a></li>
+                        <li><a href="stempact_chapters.html">OUR CHAPTERS</a></li>
+                        <li><a href="stempact_start.html">START A CHAPTER</a></li>
+                        <li><a href="stempact_contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Welcome to STEMpact Tutoring!</h1>
+                <p>Founded in Denver, Colorado, STEMpact Tutoring Organization (Est. 2023) is focused <br> on providing quality tutoring services in STEM subjects to Title 1 Elementary Schools.</p>
+                <p1>Learn more about what STEMpact does in the "About Us" tab.</p1>
+                
+            </div>
+    
+        </section>
+<!-----our partners-->
+<section class="course">
+    <h1>Our Partners</h1>
+    <div class="row">
+        <div class="school-cat">
+            <h3>Our Elementary Schools</h3>
+            <p>Independence Elementary, Holly Hills Elementary, Arrowhead Elementary, Cimarron Elementary, Eastridge Community, and Highline Community</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+        <!------javascript for toggle menu------>
+        <script>
+            var navLinks = document.getElementByID("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
